@@ -1,0 +1,19 @@
+{
+  "task": "PodcastFillers binary filler word detection",
+  "labels": {
+    "0": "non_filler",
+    "1": "filler"
+  },
+  "filler_labels": [
+    "Uh",
+    "Um"
+  ],
+  "best_threshold": 0.5,
+  "sample_rate": 16000,
+  "clip_seconds": 1.0,
+  "num_mels": 64,
+  "frame_length": 400,
+  "frame_step": 160,
+  "fft_length": 512,
+  "model_path": "models\\best_podcastfillers_filler_detector.keras"
+}
