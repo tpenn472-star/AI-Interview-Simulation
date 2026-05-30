@@ -2,7 +2,7 @@ FROM python:3.12-slim
 
 # Install ffmpeg
 RUN apt-get update && \
-    apt-get install -y ffmpeg && \
+    apt-get install -y ffmpeg espeak-ng alsa-utils libasound2-dev && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
